@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $fira-sans;
+  color: $dark;
+
+  background-color: white;
+
+  counter-reset: facts;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
