@@ -93,16 +93,19 @@
     </article>
   </main>
   <article class="popup">
-    <button class="popup__close-button">Закрыть</button>
-    <div class="popup__content sign-in">
-      <h2 class="sign-in__title">Авторизация</h2>
-      <form action="#" class="sign-in__form">
-        <label for="email">E-mail</label>
-        <input type="e-mail" id="email" placeholder="Введите e-mail">
-        <label for="password">Пароль</label>
-        <input type="password" id="password" placeholder="Введите пароль">
-        <button type="submit">Войти</button>
-      </form>
+    <div class="popup__overlay"></div>
+    <div class="popup__wrapper">
+      <button class="popup__close-button">Закрыть</button>
+      <div class="popup__content sign-in">
+        <h2 class="sign-in__title">Авторизация</h2>
+        <form action="#" class="sign-in__form">
+          <label for="email">E-mail</label>
+          <input type="e-mail" id="email" placeholder="Введите e-mail">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="Введите пароль">
+          <button class="button" type="submit">Войти</button>
+        </form>
+      </div>
     </div>
   </article>
 </body>
