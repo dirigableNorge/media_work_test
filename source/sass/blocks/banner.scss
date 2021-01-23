@@ -1,0 +1,30 @@
+.banner__wrapper {
+  padding-left: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image:
+    url("../img/Banner_cars_bg@1x.png"),
+    url("../img/Banner_map_bg@1x.png"),
+    linear-gradient(90deg, $velvet1 0%, $velvet2 100%);
+  background-size:
+    643px 340px,
+    670px 322px,
+    100%;
+  background-position:
+    top 24px right,
+    top 5px right 88px,
+    top left;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.banner__title {
+  max-width: 590px;
+  margin-bottom: 46px;
+
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 45px;
+
+  color: white;
+}

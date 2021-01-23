@@ -1,1 +1,12 @@
 @import "fonts.scss";
+@import "colours";
+@import "variables.scss";
+@import "visually-hidden.scss";
+@import "global";
+//
+@import "blocks/button.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/welcome.scss";
+@import "blocks/page-header.scss";
+@import "blocks/features.scss";
+@import "blocks/banner.scss";

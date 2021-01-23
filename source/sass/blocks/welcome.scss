@@ -1,0 +1,36 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  padding-top: 43px;
+  padding-bottom: 240px;
+
+  background-image: url("../img/header__image@1x.png");
+  background-repeat: no-repeat;
+  background-position: top right -15px;
+  background-size: 689px 442px;
+}
+
+.welcome__title {
+  max-width: 545px;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  color: white;
+}
+
+.welcome__text {
+  max-width: 530px;
+  margin-bottom: 60px;
+
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 31px;
+  color: white;
+}
+
+.welcome__button {
+  width: 222px;
+}

@@ -3,77 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" as="font" href="fonts/Whitney-Bold.woff2">
+  <link rel="preload" as="font" href="fonts/Whitney-Semibold.woff2">
+  <link rel="preload" as="font" href="fonts/Whitney-Light.woff2">
+  <link rel="preload" as="font" href="fonts/Whitney-Medium.woff2">
   <title>Media works testing</title>
 </head>
 <body>
   <header class="page-header">
-    <div class="top">
-      <a href="#" class="header__logo">
-        <picture>
-          <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
-          <img class="logo-image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="147" height="32" alt="Logo">
-        </picture>
-      </a>
-      <ul class="header__menu-list">
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Клиентам</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="" class="header__menu-link">Войти</a>
-        </li>
-      </ul>
-    </div>
-    <div class="header_welcome welcome">
-      <h2 class="welcome__title">Подбор авто в лизинг по выгодной цене</h2>
-      <p class="welcome__text">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
-      <button class="welcome__button">Регистрация</button>
+    <div class="wrapper">
+      <div class="page-header__top">
+        <a href="#" class="page-header__logo">
+          <picture>
+            <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x">
+            <img class="logo-image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="147" height="32" alt="Logo">
+          </picture>
+        </a>
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-item">
+            <a href="" class="page-header__menu-link">Клиентам</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a href="" class="page-header__menu-link page-header__menu-link--account">Войти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__welcome welcome">
+        <h2 class="welcome__title">Подбор авто в лизинг по выгодной цене</h2>
+        <p class="welcome__text">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+        <button class="welcome__button button">Регистрация</button>
+      </div>
     </div>
   </header>
   <main class="page__main">
+    <h1 class="visually-hidden"></h1>
     <section class="features">
-      <h2 class="features__title">Меньше условий – больше возможностей </h2>
-      <ul class="features__list">
-        <li class="features__item">
-          <h3 class="features__subtitle">Экономия времени</h3>
-          <p class="features__text">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
-          <picture>
-            <source type="image/webp" srcset="img/Time@1x.webp 1x, img/Time@2x.webp 2x">
-            <img class="features__image" src="img/Time@1x.png" srcset="img/Time@2x.png 2x" widht="193" height="193" alt="Image about time">
-          </picture>
-
-        </li>
-        <li class="features__item">
-          <h3 class="features__subtitle">Никаких задержек</h3>
-          <p class="features__text">Вы получаете запросы сразу же после отправки клиентом.</p>
-          <picture>
-            <source type="image/webp" srcset="img/Speed@1x.webp 1x, img/Speed@2x.webp 2x">
-            <img class="features__image" src="img/Speed@1x.png" srcset="img/Speed@2x.png 2x" widht="193" height="193" alt="Image about speed">
-          </picture>
-
-        </li>
-        <li class="features__item">
-          <h3 class="features__subtitle">Максимальная информативность</h3>
-          <p class="features__text">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
-          <picture>
-            <source type="image/webp" srcset="img/Information@1x.webp 1x, img/Information@2x.webp 2x">
-            <img class="features__image" src="img/Information@1x.png" srcset="img/Information@2x.png 2x" widht="193" height="193" alt="Image about information">
-          </picture>
-
-        </li>
-        <li class="features__item">
-          <h3 class="features__subtitle">Удобство общения</h3>
-          <p class="features__text">Для каждого запроса у вас открыт чат с клиентом с возможностью отправки документов.</p>
-          <picture>
-            <source type="image/webp" srcset="img/Chat@1x.webp 1x, img/Chat@2x.webp 2x">
-            <img class="features__image" src="img/Chat@1x.png" ,="" srcset="img/Chat@2x.png 2x" widht="193" height="193" alt="Image about chat">
-          </picture>
-        </li>
-      </ul>
+      <div class="wrapper features__wrapper">
+        <h2 class="features__title">Меньше условий – больше возможностей </h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__container">
+              <h3 class="features__subtitle">Экономия времени</h3>
+              <p class="features__text">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/Time@1x.webp 1x, img/Time@2x.webp 2x">
+              <img class="features__image" src="img/Time@1x.png" srcset="img/Time@2x.png 2x" widht="166" height="181" alt="Image about time">
+            </picture>
+          </li>
+          <li class="features__item">
+            <div class="features__container">
+              <h3 class="features__subtitle">Никаких задержек</h3>
+              <p class="features__text">Вы получаете запросы сразу же после отправки клиентом.</p>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/Speed@1x.webp 1x, img/Speed@2x.webp 2x">
+              <img class="features__image" src="img/Speed@1x.png" srcset="img/Speed@2x.png 2x" widht="193" height="193" alt="Image about speed">
+            </picture>
+          </li>
+          <li class="features__item">
+            <div class="features__container">
+              <h3 class="features__subtitle">Максимальная информативность</h3>
+              <p class="features__text">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/Information@1x.webp 1x, img/Information@2x.webp 2x">
+              <img class="features__image" src="img/Information@1x.png" srcset="img/Information@2x.png 2x" widht="166" height="181" alt="Image about information">
+            </picture>
+          </li>
+          <li class="features__item">
+            <div class="features__container">
+              <h3 class="features__subtitle">Удобство общения</h3>
+              <p class="features__text">Для каждого запроса у вас открыт чат с клиентом с возможностью отправки документов.</p>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/Chat@1x.webp 1x, img/Chat@2x.webp 2x">
+              <img class="features__image" src="img/Chat@1x.png" ,="" srcset="img/Chat@2x.png 2x" widht="193" height="193" alt="Image about chat">
+            </picture>
+          </li>
+        </ul>
+      </div>
     </section>
     <article class="banner">
-      <h2 class="banner__title">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</h2>
-      <a href="#" class="banner__button">Регистрация</a>
+      <div class="wrapper banner__wrapper">
+        <h2 class="banner__title">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</h2>
+        <a href="#" class="button banner__button">Регистрация</a>
+      </div>
     </article>
   </main>
   <article class="popup">
