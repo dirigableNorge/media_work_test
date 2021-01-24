@@ -25,7 +25,7 @@
             <a href="" class="page-header__menu-link">Клиентам</a>
           </li>
           <li class="page-header__menu-item">
-            <a href="" class="page-header__menu-link page-header__menu-link--account">Войти</a>
+            <a href="" class="page-header__menu-link page-header__menu-link--account" id="signInButton">Войти</a>
           </li>
         </ul>
       </div>
@@ -92,10 +92,10 @@
       </div>
     </article>
   </main>
-  <article class="popup">
+  <article class="popup popup--closed" id="popupElement">
     <div class="popup__overlay"></div>
     <div class="popup__wrapper">
-      <button class="popup__close-button">Закрыть</button>
+      <button class="popup__close-button" id="popupCloseButton">Закрыть</button>
       <div class="popup__content sign-in">
         <h2 class="sign-in__title">Авторизация</h2>
         <form action="#" class="sign-in__form">
@@ -108,5 +108,6 @@
       </div>
     </div>
   </article>
+  <script src="js/main.js"></script>
 </body>
 </html>

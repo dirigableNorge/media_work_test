@@ -276,6 +276,9 @@ img {
   width: 100%;
   height: 100%; }
 
+.popup--closed {
+  display: none; }
+
 .popup__overlay {
   position: absolute;
   top: 0;
@@ -309,7 +312,12 @@ img {
   font-size: 0;
   background-image: url("../img/close.svg");
   background-color: transparent;
-  border: none; }
+  border: none;
+  cursor: pointer; }
+  .popup__close-button:hover, .popup__close-button:focus {
+    opacity: 0.8; }
+  .popup__close-button:active {
+    opacity: 0.5; }
 
 .popup__content {
   padding: 60px;
