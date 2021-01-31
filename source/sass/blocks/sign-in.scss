@@ -6,6 +6,7 @@
 .sign-in__title {
   margin: 0;
   margin-bottom: 35px;
+
   font-weight: 600;
   font-size: 40px;
   line-height: 52px;
@@ -49,4 +50,10 @@
 
 .sign-in__form button {
   margin-top: 34px;
+}
+
+@media (max-width: 500px) {
+  .sign-in form {
+    width: 260px;
+  }
 }

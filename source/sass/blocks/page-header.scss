@@ -9,16 +9,23 @@
 
 .page-header__top {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .page-header__logo {
   margin-right: auto;
 }
 
+.page-header__logo-image {
+  width: 100%;
+}
+
 .page-header__menu-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -63,5 +70,25 @@
 }
 
 .page-header__welcome {
-  margin-top: 133px;
+  margin-top: 100px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header__top {
+    justify-content: start;
+    padding-bottom: 0;
+  }
+
+  .page-header__logo {
+    margin-bottom: 33px;
+  }
+
+  .page-header__menu-list {
+    margin-bottom: 33px;
+  }
+
+  .page-header__menu-item {
+    margin-left: 0;
+    margin-right: 40px;
+  }
 }

@@ -1,6 +1,6 @@
 .features {
   margin-bottom: 130px;
-  padding: 120px;
+  padding-top: 120px;
 
   color: $dark;
 }
@@ -17,6 +17,7 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   margin-left: -30px;
   padding: 0;
@@ -63,4 +64,21 @@
 
 .features__image {
   margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .features__item {
+    flex-wrap: wrap;
+  }
+
+  .features__container {
+    padding-left: 20px;
+  }
+
+  .features__image {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
